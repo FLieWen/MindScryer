@@ -1,0 +1,82 @@
+# === Python cache ===
+__pycache__/
+*.pyc
+*.pyo
+
+# === Model checkpoints & weights (large binary files) ===
+*.pth
+*.pkl
+*.ckpt
+*.safetensors
+*.bin
+checkpoints/
+saved_models/
+pretrained_model/
+
+# === Pretrained model directories (downloaded, not source code) ===
+CLIP/
+blip2-opt-2.7b/
+clip-vit-large-patch14/
+sdxl-turbo/
+Mistral-7B-Instruct-v0.2/
+
+# === Data (large, downloaded) ===
+data/
+my_naruto_style_dataset/
+
+# === Generated images (output, not source) ===
+picture-gene/
+picture-gene-onlygt/
+picture-stage1/
+picture-finetuned-direct-with-prompt/
+my_picture-gene/
+my_picture-gene-onlygt/
+my_picture-gene_finetune/
+my_picture-gene-onlygt_finetune/
+my_picture-gene_mlp/
+my_picture-gene-onlygt_mlp/
+my_picture-gene-onlygt/
+test_picture-gene/
+test_picture-gene-onlygt/
+generated_images/
+debug_images/
+generation_results/
+inference_results/
+
+# === Logs & experiment outputs ===
+log/
+wandb/
+exp/
+results_EEGNet/
+results_LSTM/
+ablation_results/
+*.log
+
+# === Large test checkpoints ===
+test/
+original/
+
+# === Nested repos ===
+finetune_sd/
+
+# === TensorBoard logs ===
+**/events.out.tfevents*
+
+# === OS files ===
+.DS_Store
+Thumbs.db
+
+# === IDE ===
+.vscode/
+.idea/
+
+# === Images that are outputs, not figures ===
+*.png
+*.jpg
+*.jpeg
+
+# === Exception: keep figures directory ===
+!figures/*.png
+!figures/*.jpg
+!figures/*.jpeg
+High_Quality_EEG_to_Image_Reconstruction_via_Dual_Branch_Feature_Extraction_and_Cascaded_Conditional_Diffusion__2_ 0612.pdf
